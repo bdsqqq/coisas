@@ -113,6 +113,15 @@ importers:
         specifier: ^6.7.0
         version: 6.7.0(postcss@8.4.33)(typescript@5.3.3)
 
+  packages/tailwindcss-toolkit:
+    devDependencies:
+      tsconfig:
+        specifier: workspace:*
+        version: link:../tsconfig
+      tsup:
+        specifier: ^6.7.0
+        version: 6.7.0(postcss@8.4.33)(typescript@5.3.3)
+
   packages/tsconfig: {}
 
   packages/ui:
