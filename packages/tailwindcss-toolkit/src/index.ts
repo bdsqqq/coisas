@@ -1,3 +1,3 @@
-export const test = () => {
-  return "works";
-};
+import { extendedDisabledEnabled } from "./variants/extendedDisabledEnabled";
+
+export { extendedDisabledEnabled };

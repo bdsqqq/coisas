@@ -73,6 +73,42 @@ importers:
         specifier: ^3.2.6
         version: 3.3.1(postcss@8.4.21)
 
+  apps/tailwindcss-toolkit-site:
+    dependencies:
+      '@astrojs/check':
+        specifier: ^0.4.1
+        version: 0.4.1(prettier@2.8.7)(typescript@5.3.3)
+      '@astrojs/solid-js':
+        specifier: ^4.0.1
+        version: 4.0.1(solid-js@1.8.12)(vite@5.0.12)
+      '@astrojs/tailwind':
+        specifier: ^5.1.0
+        version: 5.1.0(astro@4.2.3(typescript@5.3.3))(tailwindcss@3.4.9)
+      '@bdsqqq/tailwindcss-toolkit':
+        specifier: workspace:*
+        version: link:../../packages/tailwindcss-toolkit
+      astro:
+        specifier: ^4.2.3
+        version: 4.2.3(typescript@5.3.3)
+      astro-font:
+        specifier: ^0.0.77
+        version: 0.0.77
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
+      solid-js:
+        specifier: ^1.8.12
+        version: 1.8.12
+      tailwind-merge:
+        specifier: ^2.2.1
+        version: 2.2.1
+      tailwindcss:
+        specifier: ^3.4.1
+        version: 3.4.9
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+
   packages/bartm:
     devDependencies:
       tsconfig:
@@ -114,6 +150,10 @@ importers:
         version: 6.7.0(postcss@8.4.33)(typescript@5.3.3)
 
   packages/tailwindcss-toolkit:
+    dependencies:
+      tailwindcss:
+        specifier: ^3.4.9
+        version: 3.4.9
     devDependencies:
       tsconfig:
         specifier: workspace:*
@@ -3859,6 +3899,11 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  tailwindcss@3.4.9:
+    resolution: {integrity: sha512-1SEOvRr6sSdV5IDf9iC+NU4dhwdqzF4zKKq3sAbasUWHEM6lsMhX+eNN5gkPx1BvLFEnZQEUFbXnGj8Qlp83Pg==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+
   tar-fs@2.1.1:
     resolution: {integrity: sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng==}
 
@@ -4634,6 +4679,16 @@ snapshots:
       postcss: 8.4.33
       postcss-load-config: 4.0.2(postcss@8.4.33)
       tailwindcss: 3.4.1
+    transitivePeerDependencies:
+      - ts-node
+
+  '@astrojs/tailwind@5.1.0(astro@4.2.3(typescript@5.3.3))(tailwindcss@3.4.9)':
+    dependencies:
+      astro: 4.2.3(typescript@5.3.3)
+      autoprefixer: 10.4.17(postcss@8.4.33)
+      postcss: 8.4.33
+      postcss-load-config: 4.0.2(postcss@8.4.33)
+      tailwindcss: 3.4.9
     transitivePeerDependencies:
       - ts-node
 
@@ -9255,6 +9310,33 @@ snapshots:
       postcss-import: 15.1.0(postcss@8.4.33)
       postcss-js: 4.0.1(postcss@8.4.33)
       postcss-load-config: 4.0.1(postcss@8.4.33)
+      postcss-nested: 6.0.1(postcss@8.4.33)
+      postcss-selector-parser: 6.0.11
+      resolve: 1.22.8
+      sucrase: 3.35.0
+    transitivePeerDependencies:
+      - ts-node
+
+  tailwindcss@3.4.9:
+    dependencies:
+      '@alloc/quick-lru': 5.2.0
+      arg: 5.0.2
+      chokidar: 3.5.3
+      didyoumean: 1.2.2
+      dlv: 1.1.3
+      fast-glob: 3.3.2
+      glob-parent: 6.0.2
+      is-glob: 4.0.3
+      jiti: 1.21.0
+      lilconfig: 2.1.0
+      micromatch: 4.0.5
+      normalize-path: 3.0.0
+      object-hash: 3.0.0
+      picocolors: 1.0.0
+      postcss: 8.4.33
+      postcss-import: 15.1.0(postcss@8.4.33)
+      postcss-js: 4.0.1(postcss@8.4.33)
+      postcss-load-config: 4.0.2(postcss@8.4.33)
       postcss-nested: 6.0.1(postcss@8.4.33)
       postcss-selector-parser: 6.0.11
       resolve: 1.22.8
