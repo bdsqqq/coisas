@@ -1,7 +1,7 @@
 {
   "name": "@bdsqqq/tailwindcss-toolkit",
   "scope": "@bdsqqq/",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "access": "public",
   "description": "",
   "displayName": "Tailwindcss Toolkit",
