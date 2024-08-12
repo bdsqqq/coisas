@@ -1,0 +1,28 @@
+{
+  "name": "@bdsqqq/tailwindcss-toolkit",
+  "scope": "@bdsqqq/",
+  "version": "0.1.0",
+  "access": "public",
+  "description": "",
+  "displayName": "Tailwindcss Toolkit",
+  "main": "./dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [],
+  "author": "Igor Bedesqui",
+  "license": "MIT",
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "tsup": "^6.7.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.9"
+  }
+}
